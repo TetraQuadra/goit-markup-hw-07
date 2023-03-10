@@ -55,6 +55,87 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu menu-hamburger-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu modal-button">
+          <svg height="8" width="8" class="button-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="nav-mobile">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a
+                href="./index.html"
+                class="mobile-menu-link current-mobile-page"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./portfolio.html" class="mobile-menu-link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-contacts-wrapper">
+          <adresses class="adr-mobile-menu">
+            <ul class="adr-mobile-list">
+              <li class="adr-mobile-list-item">
+                <a class="adr-mobile-list-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="adr-mobile-list-item">
+                <a class="adr-mobile-list-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </adresses>
+          <div class="mobile-menu-social-links">
+            <ul class="mobile-menu-social-links-list">
+              <li class="mobile-menu-social-links-item">
+                <a class="social-link" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-links-item">
+                <a class="social-link" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-links-item">
+                <a class="social-link" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-links-item">
+                <a class="social-link" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -376,80 +457,79 @@
     <!-- Подвал страницы -->
     <footer class="footer">
       <div class="container">
-        <!-- Motto -->
-        <div class="motto-container">
-          <a href="./index.html" class="logo footer-logo"
-            ><span class="logo-span-web">Web</span>Studio</a
-          >
-          <p class="footer-motto">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-
-        <!-- Social links -->
-        <div class="social-links-container">
-          <h3 class="footer-social-media-title">Social media</h3>
-          <ul class="social-links-list-footer">
-            <li class="social-links-item">
-              <a class="social-link-footer" href="#">
-                <svg height="24" width="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links-item">
-              <a class="social-link-footer" href="#">
-                <svg height="24" width="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links-item">
-              <a class="social-link-footer" href="#">
-                <svg height="24" width="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links-item">
-              <a class="social-link-footer" href="#">
-                <svg height="24" width="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <form id="subscribe-form" class="footer-subcsribe-form">
-          <div class="footer-subscribe-form-email-input">
-            <label for="footer-mail" class="footer-mail-title"
-              ><h3 class="footer-social-media-title">Subscribe</h3></label
+        <div class="footer-wrapper">
+          <div class="motto-container">
+            <a href="./index.html" class="logo footer-logo"
+              ><span class="logo-span-web">Web</span>Studio</a
             >
-            <input
-              type="email"
-              class="footer-email-input"
-              name="footer-mail"
-              id="footer-mail"
-              placeholder="E-mail"
-              required
-            />
+            <p class="footer-motto">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="social-links-container">
+            <h3 class="footer-social-media-title">Social media</h3>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item">
+                <a class="social-link-footer" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link-footer" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link-footer" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link-footer" href="#">
+                  <svg height="24" width="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div class="footer-subscribe-button">
-            <button
-              type="submit"
-              form="subscribe-form"
-              class="footer-btn-submit"
-            >
-              Subscribe
-              <svg class="footer-input-icon" width="24" height="20">
-                <use href="./images/icons.svg#icon-footer-subsrcibe"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+          <form id="subscribe-form" class="footer-subcsribe-form">
+            <div class="footer-subscribe-form-email-input">
+              <label for="footer-mail" class="footer-mail-title"
+                ><h3 class="footer-social-media-title">Subscribe</h3></label
+              >
+              <input
+                type="email"
+                class="footer-email-input"
+                name="footer-mail"
+                id="footer-mail"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+
+            <div class="footer-subscribe-button">
+              <button
+                type="submit"
+                form="subscribe-form"
+                class="footer-btn-submit"
+              >
+                Subscribe
+                <svg class="footer-input-icon" width="24" height="20">
+                  <use href="./images/icons.svg#icon-footer-subsrcibe"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -539,10 +619,12 @@
               value="vector"
               required
             />
-            <label for="policy" class="modal-agreement-label"
-              >I accept the terms and conditions of the&nbsp;
-              <a href="" class="modal-policy-link">Privacy Policy</a></label
-            >
+            <label for="policy" class="modal-agreement-label">
+              <span>
+                I accept the terms and conditions of the&nbsp;
+                <a href="" class="modal-policy-link">Privacy Policy</a>
+              </span>
+            </label>
           </div>
 
           <div class="submit-button-wrapper">
@@ -554,5 +636,6 @@
 
     <!-- Script load -->
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
