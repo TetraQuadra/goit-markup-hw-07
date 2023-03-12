@@ -1182,6 +1182,7 @@ img {
 
 @media (max-width: 427px) {
   .adr-mobile-list-item:first-child a {
+    font-size: 27px;
   }
 }
 
